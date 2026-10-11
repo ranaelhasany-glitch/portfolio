@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rana Elhasany — Graphic Designer specializing in Branding, Visual Identity, Social Media Design, and Presentation Design. Distinctive, thoughtful, and purpose-driven visual communication.">
+  <meta name="keywords" content="Rana Elhasany, Graphic Designer, Branding, Visual Identity, Logo Design, Presentation Design, Social Media Design, Print Design">
+  <meta name="author" content="Rana Elhasany">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rana Elhasany | Graphic Designer & Visual Storyteller">
+  <meta property="og:description" content="Portfolio of Rana Elhasany — Graphic Designer focused on branding, visual identity, and purposeful visual communication.">
+  
+  <title>Rana Elhasany | Graphic Designer & Visual Communication</title>
+  
+  <!-- Google Fonts: Space Grotesk, Syne, and Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Reading / Scroll Progress Bar -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- Custom Cursor Elements (Desktop fine pointer only) -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- Ambient Animated Background Elements -->
+  <div class="ambient-background" aria-hidden="true">
+    <div class="ambient-glow ambient-glow--1"></div>
+    <div class="ambient-glow ambient-glow--2"></div>
+    <div class="ambient-glow ambient-glow--3"></div>
+    <div class="floating-shape shape-ring shape-ring--1"></div>
+    <div class="floating-shape shape-ring shape-ring--2"></div>
+    <div class="floating-shape shape-cross shape-cross--1"></div>
+    <div class="floating-shape shape-cross shape-cross--2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Skip to Content Accessibility Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#home" class="brand-logo" aria-label="Rana Elhasany - Return to Home">
+        <span class="logo-text">Rana Elhasany</span>
+        <span class="logo-tag">Design</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-navigation" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Get in Touch</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn--outline btn--sm header-cta">Let's Talk</a>
+        
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-box">
+            <span class="hamburger-line line-1"></span>
+            <span class="hamburger-line line-2"></span>
+            <span class="hamburger-line line-3"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer__overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer__panel">
+      <div class="mobile-drawer__header">
+        <span class="mobile-drawer__title">Navigation</span>
+        <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close navigation menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Get in Touch</a></li>
+      </ul>
+      <div class="mobile-drawer__footer">
+        <a href="#contact" class="btn btn--primary mobile-drawer__btn">Let's Talk</a>
+        <p class="mobile-drawer__caption">Graphic Designer | Branding & Visual Communication</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Website Content -->
+  <main id="main-content">
+
+    <!-- ==============================================
+         SECTION 1: HOME (HERO)
+         ============================================== -->
+    <section class="section hero-section" id="home" aria-label="Hero">
+      <div class="container hero-container">
+        <!-- Left Column: Copy & CTAs -->
+        <div class="hero-content">
+          <div class="eyebrow-badge fade-up">
+            <span class="badge-dot"></span>
+            <span class="eyebrow-text">GRAPHIC DESIGNER & VISUAL STORYTELLER</span>
+          </div>
+
+          <h1 class="hero-title fade-up delay-1">
+            <span class="hero-title__name">Rana Elhasany</span>
+          </h1>
+
+          <p class="hero-subtitle fade-up delay-2">
+            Graphic Designer <span class="divider-slash">/</span> Branding & Visual Communication
+          </p>
+
+          <p class="hero-description fade-up delay-3">
+            I create thoughtful and visually engaging designs that combine creativity, clarity, and strong visual communication. My work focuses on branding, visual identity, logo design, social media design, and presentation design.
+          </p>
+
+          <p class="hero-supporting fade-up delay-3">
+            I create creative and purposeful visual designs that help brands communicate clearly and build a strong visual presence. My work combines thoughtful concepts, balanced composition, typography, color, and visual consistency across different design applications.
+          </p>
+
+          <div class="hero-actions fade-up delay-4">
+            <a href="#projects" class="btn btn--primary">
+              <span>Explore My Work</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn--outline">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <div class="hero-specs fade-up delay-5">
+            <div class="spec-item">
+              <span class="spec-label">Discipline</span>
+              <span class="spec-value">Graphic & Brand Design</span>
+            </div>
+            <div class="spec-separator" aria-hidden="true"></div>
+            <div class="spec-item">
+              <span class="spec-label">Focus</span>
+              <span class="spec-value">Identity, Typography & Form</span>
+            </div>
+            <div class="spec-separator" aria-hidden="true"></div>
+            <div class="spec-item">
+              <span class="spec-label">Location</span>
+              <span class="spec-value">Available Worldwide</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Artistic Visual Composition -->
+        <div class="hero-visual fade-up delay-2" aria-label="Abstract Graphic Design Artwork">
+          <div class="poster-canvas" id="heroCanvasCard">
+            <!-- Subtle Grid & Geometry -->
+        <img src="portfolio.jpeg" alt="">
+
+              <!-- Brand Palette Floating Swatches -->
+          </div>
+        </div>
+
+         
+
+            <!-- Floating Badge -->
+            <div class="floating-badge">
+              <svg class="badge-curved-text" viewBox="0 0 100 100" aria-hidden="true">
+                <path id="badgeCircle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
+                <text font-size="9.5" fill="#F5F0EB" letter-spacing="2.5">
+                  <textPath href="#badgeCircle">
+                    BRANDING • VISUAL IDENTITY • DESIGN •
+                  </textPath>
+                </text>
+              </svg>
+              <div class="badge-icon-center">✦</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="hero-scroll-indicator" aria-label="Scroll down to About section">
+        <span class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll to explore</span>
+      </a>
+    </section>
+
+
+    <!-- ==============================================
+         SECTION 2: ABOUT
+         ============================================== -->
+    <section class="section about-section" id="about" aria-label="About Rana Elhasany">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Creative Perspective</span>
+          <h2 class="section-title">Designing with Purpose.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative fade-up">
+            <p class="about-lead">
+              I'm a <span class="highlight-text">Graphic Designer</span> focused on creating <span class="highlight-text">meaningful and consistent visual experiences</span>.
+            </p>
+            <p class="about-body">
+              My work covers different areas of graphic design, from developing <span class="highlight-text highlight-text--alt">brand identities and logos</span> to creating <span class="highlight-text highlight-text--alt">social media content, presentations</span>, and promotional materials.
+            </p>
+            <p class="about-body">
+              I pay close attention to <span class="highlight-text">composition, typography, color, and visual consistency</span> to create designs that communicate ideas clearly and professionally.
+            </p>
+
+            <div class="about-values">
+              <div class="value-item">
+                <span class="value-number">01</span>
+                <div class="value-content">
+                  <h3 class="value-title">Conceptual Depth</h3>
+                  <p class="value-desc">Every visual choice starts from a clear concept and thoughtful rationale.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-number">02</span>
+                <div class="value-content">
+                  <h3 class="value-title">Typographic Precision</h3>
+                  <p class="value-desc">Balancing hierarchy, rhythm, and clarity across print and digital media.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-number">03</span>
+                <div class="value-content">
+                  <h3 class="value-title">Systematic Cohesion</h3>
+                  <p class="value-desc">Building versatile visual systems that stay unified at every touchpoint.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Designer Creative Process Visual Element -->
+          <div class="about-visual fade-up delay-2">
+            <div class="process-card">
+              <div class="process-header">
+                <span class="process-pill">THE DESIGN PROCESS</span>
+                <span class="process-indicator">METHODOLOGY</span>
+              </div>
+
+              <div class="process-steps">
+                <div class="process-step">
+                  <div class="step-marker"><span class="marker-dot"></span></div>
+                  <div class="step-info">
+                    <span class="step-phase">PHASE 01</span>
+                    <h4 class="step-name">Discovery & Concept</h4>
+                    <p class="step-detail">Understanding identity goals, visual context, and foundational direction.</p>
+                  </div>
+                </div>
+
+                <div class="process-step">
+                  <div class="step-marker"><span class="marker-dot"></span></div>
+                  <div class="step-info">
+                    <span class="step-phase">PHASE 02</span>
+                    <h4 class="step-name">Structure & Typography</h4>
+                    <p class="step-detail">Establishing grid systems, font pairings, spatial balance, and hierarchy.</p>
+                  </div>
+                </div>
+
+                <div class="process-step">
+                  <div class="step-marker"><span class="marker-dot"></span></div>
+                  <div class="step-info">
+                    <span class="step-phase">PHASE 03</span>
+                    <h4 class="step-name">Color & Visual Language</h4>
+                    <p class="step-detail">Crafting purposeful palettes, graphic elements, and identity assets.</p>
+                  </div>
+                </div>
+
+                <div class="process-step">
+                  <div class="step-marker"><span class="marker-dot"></span></div>
+                  <div class="step-info">
+                    <span class="step-phase">PHASE 04</span>
+                    <h4 class="step-name">Application & Guidelines</h4>
+                    <p class="step-detail">Extending into stationery, digital presence, social templates, and print.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Animated Process Graphic Canvas -->
+              <div class="process-art-footer">
+                <div class="art-grid-lines"></div>
+                <div class="art-token token-a">FORM</div>
+                <div class="art-arrow">&rarr;</div>
+                <div class="art-token token-b">FUNCTION</div>
+                <div class="art-arrow">&rarr;</div>
+                <div class="art-token token-c">IMPACT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         SECTION 3: EDUCATION
+         ============================================== -->
+    <section class="section education-section" id="education" aria-label="Education & Training">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Academic & Practical Foundation</span>
+          <h2 class="section-title">Education & Training</h2>
+          <p class="section-subtitle">Rigorous training in visual design fundamentals, industry standards, and creative software.</p>
+        </div>
+
+        <div class="education-layout">
+          <div class="education-card fade-up">
+            <div class="edu-card__badge">
+              <span class="badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </span>
+              <span class="badge-label">INTENSIVE PRACTICAL TRAINING</span>
+            </div>
+
+            <div class="edu-card__main">
+              <h3 class="edu-title">Graphic Design Training</h3>
+              <p class="edu-institution">National Telecommunication Institute (NTI) – Creativa</p>
+              
+              <div class="edu-divider"></div>
+
+              <p class="edu-description">
+                Practical training covering graphic design fundamentals, visual communication, branding, Adobe Illustrator, Photoshop, and design applications.
+              </p>
+
+              <div class="edu-curriculum">
+                <h4 class="curriculum-heading">Focus Areas & Competencies</h4>
+                <div class="tags-container">
+                  <span class="skill-tag">Graphic Design Fundamentals</span>
+                  <span class="skill-tag">Visual Communication</span>
+                  <span class="skill-tag">Branding Systems</span>
+                  <span class="skill-tag">Adobe Illustrator</span>
+                  <span class="skill-tag">Adobe Photoshop</span>
+                  <span class="skill-tag">Design Applications</span>
+                  <span class="skill-tag">Composition & Color</span>
+                  <span class="skill-tag">Vector & Raster Workflows</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="edu-card__side" aria-hidden="true">
+              <div class="side-stat">
+                <span class="stat-glyph">✦</span>
+                <span class="stat-caption">Practical Workshop Application</span>
+              </div>
+              <div class="side-visual-bars">
+                <div class="visual-bar" style="--bar-width: 90%;"></div>
+                <div class="visual-bar" style="--bar-width: 80%;"></div>
+                <div class="visual-bar" style="--bar-width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         SECTION 4: EXPERIENCE
+         ============================================== -->
+    <section class="section experience-section" id="experience" aria-label="Experience & Practical Projects">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Practical Trajectory</span>
+          <h2 class="section-title">Graphic Design Training &amp; Projects</h2>
+          <p class="section-subtitle">
+            Hands-on experience developing visual concepts and applying graphic design principles across different projects. My practical work includes branding, logo design, social media designs, presentations, promotional materials, and visual identity applications.
+          </p>
+        </div>
+
+        <!-- Editorial Timeline Layout -->
+        <div class="experience-timeline">
+          
+          <!-- Experience Card 1 -->
+          <div class="timeline-entry fade-up">
+            <div class="timeline-marker">
+              <span class="marker-dot-ring"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-phase-tag">PROJECT PHASE 01</span>
+                <h3 class="timeline-role">Brand Identity &amp; Logo Development</h3>
+              </div>
+              <p class="timeline-summary">
+                Conceptualized and designed full-scale visual identity packages, translating core brand ideas into recognizable logos, harmonious color schemes, and coherent typography guidelines.
+              </p>
+              <ul class="timeline-highlights">
+                <li>Formulated conceptual marks and scalable vector logo assets in Adobe Illustrator.</li>
+                <li>Created color harmonies and typography systems tailored to brand positioning.</li>
+                <li>Applied identities onto business stationery, merchandise, and digital mockups.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">Logo Design</span>
+                <span class="tag-sm">Brand Guidelines</span>
+                <span class="tag-sm">Vector Graphics</span>
+                <span class="tag-sm">Visual Identity</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 2 -->
+          <div class="timeline-entry fade-up delay-1">
+            <div class="timeline-marker">
+              <span class="marker-dot-ring"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-phase-tag">PROJECT PHASE 02</span>
+                <h3 class="timeline-role">Digital &amp; Social Media Design</h3>
+              </div>
+              <p class="timeline-summary">
+                Designed multi-format digital campaigns and social media collateral engineered to capture attention, communicate key messages, and maintain brand consistency across platforms.
+              </p>
+              <ul class="timeline-highlights">
+                <li>Created engaging social media feed posts, story banners, and promotional templates.</li>
+                <li>Optimized visual layout and typography for mobile screens and quick scanning.</li>
+                <li>Balanced high-impact imagery with concise promotional messaging.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">Social Media Design</span>
+                <span class="tag-sm">Content Layout</span>
+                <span class="tag-sm">Digital Assets</span>
+                <span class="tag-sm">Photoshop</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 3 -->
+          <div class="timeline-entry fade-up delay-2">
+            <div class="timeline-marker">
+              <span class="marker-dot-ring"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-phase-tag">PROJECT PHASE 03</span>
+                <h3 class="timeline-role">Presentation &amp; Pitch Deck Design</h3>
+              </div>
+              <p class="timeline-summary">
+                Structured complex information into clean, persuasive slide decks that emphasize clarity, hierarchy, and professional visual storytelling.
+              </p>
+              <ul class="timeline-highlights">
+                <li>Designed custom slide layouts with structured data visualization and typography hierarchy.</li>
+                <li>Unified slide decks with coherent color coding, iconography, and spacing.</li>
+                <li>Enhanced readability and visual engagement for client-facing presentations.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">Presentation Design</span>
+                <span class="tag-sm">Data Layout</span>
+                <span class="tag-sm">Visual Hierarchy</span>
+                <span class="tag-sm">Canva</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 4 -->
+          <div class="timeline-entry fade-up delay-3">
+            <div class="timeline-marker">
+              <span class="marker-dot-ring"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-phase-tag">PROJECT PHASE 04</span>
+                <h3 class="timeline-role">Print Collateral &amp; Promotional Materials</h3>
+              </div>
+              <p class="timeline-summary">
+                Prepared high-resolution print-ready collateral including flyers, brochures, posters, and business cards adhering to professional print specifications.
+              </p>
+              <ul class="timeline-highlights">
+                <li>Ensured proper bleed, margins, color modes (CMYK / RGB), and resolution standards.</li>
+                <li>Balanced editorial photography with typographic structure on printed layouts.</li>
+                <li>Created memorable tangible brand touchpoints.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">Print Design</span>
+                <span class="tag-sm">Brochures &amp; Flyers</span>
+                <span class="tag-sm">Editorial Layout</span>
+                <span class="tag-sm">Pre-Press Fundamentals</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         SECTION 5: SKILLS
+         ============================================== -->
+    <section class="section skills-section" id="skills" aria-label="Creative Skills and Tools">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Core Capabilities</span>
+          <h2 class="section-title">Creative Skills &amp; Tools</h2>
+          <p class="section-subtitle">A balanced toolkit combining foundational visual design principles with modern industry software.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Skill Card 1: Design & Visual Communication -->
+          <div class="skill-category-card fade-up">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                  <path d="M2 12h20"/>
+                </svg>
+              </div>
+              <span class="category-num">01</span>
+            </div>
+            <h3 class="category-title">Design &amp; Visual Communication</h3>
+            <p class="category-desc">Foundational disciplines that govern visual harmony, legibility, and communicative power.</p>
+            <div class="skills-list">
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Graphic Design</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Typography</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Color Theory</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Layout &amp; Composition</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Branding & Identity -->
+          <div class="skill-category-card fade-up delay-1">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <span class="category-num">02</span>
+            </div>
+            <h3 class="category-title">Branding &amp; Identity</h3>
+            <p class="category-desc">Crafting memorable marks and cohesive identities that communicate values and build recognition.</p>
+            <div class="skills-list">
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Branding</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Visual Identity</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Logo Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Digital & Print Design -->
+          <div class="skill-category-card fade-up delay-2">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <span class="category-num">03</span>
+            </div>
+            <h3 class="category-title">Digital &amp; Print Design</h3>
+            <p class="category-desc">Executing cohesive creative solutions across physical print formats and interactive digital platforms.</p>
+            <div class="skills-list">
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Social Media Design</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Presentation Design</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Print Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Software & Tools -->
+          <div class="skill-category-card fade-up delay-3">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+              </div>
+              <span class="category-num">04</span>
+            </div>
+            <h3 class="category-title">Software &amp; Tools</h3>
+            <p class="category-desc">Professional creative suite tools leveraged for vector drafting, photo composition, and layout creation.</p>
+            <div class="skills-list">
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Adobe Illustrator</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Adobe Photoshop</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-dot"></span>
+                <span class="chip-name">Canva</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         SECTION 6: PROJECTS
+         ============================================== -->
+    <section class="section projects-section" id="projects" aria-label="Selected Works">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Portfolio Gallery</span>
+          <h2 class="section-title">Selected Works</h2>
+          <p class="section-subtitle">A selection of creative projects exploring branding, visual identity, and visual communication.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="project-filters fade-up" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works</button>
+          <button class="filter-btn" data-filter="branding" role="tab" aria-selected="false">Branding &amp; Identity</button>
+          <button class="filter-btn" data-filter="digital" role="tab" aria-selected="false">Visual &amp; Digital</button>
+          <button class="filter-btn" data-filter="collection" role="tab" aria-selected="false">Design Collection</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: VIA TRAVEL (Featured Large) -->
+          <article class="project-card project-card--featured fade-up" data-category="branding" id="project-card-via">
+            <div class="project-media">
+              <!-- Designed Custom Visual Showcase Placeholder -->
+              <div class="project-canvas project-canvas--via">
+                <div class="canvas-artwork">
+                  <div class="via-badge">
+                    <span class="via-plane-icon">✈</span>
+                    <span class="via-tag">TRAVEL &bull; EXPLORE &bull; DISCOVER</span>
+                  </div>
+                  <div class="via-logo-display">
+                    <h3 class="via-brand-title">VIA TRAVEL</h3>
+                    <p class="via-brand-sub">Curated Journeys &bull; Visual Identity System</p>
+                  </div>
+                  <div class="via-assets-row">
+                    <div class="via-mockup-card">
+                      <span class="card-caption">BOARDING PASS &bull; IDENTITY</span>
+                      <div class="card-code">VIA-7049 // GATE A12</div>
+                    </div>
+                    <div class="via-mockup-card via-mockup-card--alt">
+                      <span class="card-caption">BRAND PALETTE</span>
+                      <div class="mini-swatch-row">
+                        <span style="background:#A14646;"></span>
+                        <span style="background:#DA6556;"></span>
+                        <span style="background:#EB895B;"></span>
+                        <span style="background:#FDB773;"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="placeholder-watermark-tag">Original Project Visual Presentation</div>
+              </div>
+
+              <!-- Hover Overlay with Project Summary & Action -->
+              <div class="project-overlay">
+                <div class="overlay-details">
+                  <span class="overlay-cat">Brand Identity &amp; Visual Design</span>
+                  <h3 class="overlay-title">VIA TRAVEL</h3>
+                  <p class="overlay-desc">
+                    A complete visual identity project for a travel agency, including logo design, color palette, typography, social media designs, promotional materials, and brand applications.
+                  </p>
+                  <button class="btn btn--primary btn--sm open-modal-btn" data-project="via" aria-label="View VIA TRAVEL project details">
+                    <span>View Project</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-meta-bottom">
+              <div class="meta-left">
+                <span class="project-category-badge">Brand Identity &amp; Visual Design</span>
+                <h3 class="project-title-link">VIA TRAVEL</h3>
+              </div>
+              <button class="icon-trigger-btn open-modal-btn" data-project="via" aria-label="Open VIA TRAVEL details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </button>
+            </div>
+          </article>
+
+
+          <!-- PROJECT 2: RAFEEQ -->
+          <article class="project-card fade-up delay-1" data-category="digital" id="project-card-rafeeq">
+            <div class="project-media">
+              <div class="project-canvas project-canvas--rafeeq">
+                <div class="canvas-artwork">
+                  <div class="rafeeq-header">
+                    <span class="rafeeq-dot"></span>
+                    <span class="rafeeq-tag">DIGITAL EXPERIENCE</span>
+                  </div>
+                  <div class="rafeeq-center">
+                    <h3 class="rafeeq-logo-title">RAFEEQ</h3>
+                    <p class="rafeeq-subtitle">Visual &amp; Accessible Digital Project</p>
+                  </div>
+                  <div class="rafeeq-ui-preview">
+                    <div class="ui-panel">
+                      <div class="ui-header-line"></div>
+                      <div class="ui-text-block"></div>
+                      <div class="ui-accent-bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="placeholder-watermark-tag">Digital Interface Mockup Presentation</div>
+              </div>
+
+              <!-- Hover Overlay -->
+              <div class="project-overlay">
+                <div class="overlay-details">
+                  <span class="overlay-cat">Visual &amp; Digital Project</span>
+                  <h3 class="overlay-title">RAFEEQ</h3>
+                  <p class="overlay-desc">
+                    A digital project where visual communication and user-centered design were used to create a clear and accessible experience.
+                  </p>
+                  <button class="btn btn--primary btn--sm open-modal-btn" data-project="rafeeq" aria-label="View RAFEEQ project details">
+                    <span>View Project</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-meta-bottom">
+              <div class="meta-left">
+                <span class="project-category-badge">Visual &amp; Digital Project</span>
+                <h3 class="project-title-link">RAFEEQ</h3>
+              </div>
+              <button class="icon-trigger-btn open-modal-btn" data-project="rafeeq" aria-label="Open RAFEEQ details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </button>
+            </div>
+          </article>
+
+
+          <!-- PROJECT 3: SELECTED DESIGN WORK -->
+          <article class="project-card fade-up delay-2" data-category="collection" id="project-card-collection">
+            <div class="project-media">
+              <div class="project-canvas project-canvas--collection">
+                <div class="canvas-artwork">
+                  <div class="collection-mosaic">
+                    <div class="mosaic-box box-1">
+                      <span>POSTER</span>
+                    </div>
+                    <div class="mosaic-box box-2">
+                      <span>SOCIAL</span>
+                    </div>
+                    <div class="mosaic-box box-3">
+                      <span>LAYOUT</span>
+                    </div>
+                    <div class="mosaic-box box-4">
+                      <span>TYPE</span>
+                    </div>
+                  </div>
+                  <div class="collection-title-wrap">
+                    <h3 class="collection-title">Selected Design Work</h3>
+                    <p class="collection-caption">Branding &bull; Social &bull; Presentations &bull; Print</p>
+                  </div>
+                </div>
+                <div class="placeholder-watermark-tag">Graphic Design Collection Gallery</div>
+              </div>
+
+              <!-- Hover Overlay -->
+              <div class="project-overlay">
+                <div class="overlay-details">
+                  <span class="overlay-cat">Graphic Design Collection</span>
+                  <h3 class="overlay-title">Selected Design Work</h3>
+                  <p class="overlay-desc">
+                    A collection of selected branding concepts, social media designs, presentations, promotional materials, and visual compositions developed throughout my design training and projects.
+                  </p>
+                  <button class="btn btn--primary btn--sm open-modal-btn" data-project="collection" aria-label="View Selected Design Work details">
+                    <span>View Project</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-meta-bottom">
+              <div class="meta-left">
+                <span class="project-category-badge">Graphic Design Collection</span>
+                <h3 class="project-title-link">Selected Design Work</h3>
+              </div>
+              <button class="icon-trigger-btn open-modal-btn" data-project="collection" aria-label="Open Selected Design Work details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         SECTION 7: TESTIMONIALS
+         ============================================== -->
+    <section class="section testimonials-section" id="testimonials" aria-label="Testimonials & Recommendations">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Collaborative Feedback</span>
+          <h2 class="section-title">What People Say About My Work</h2>
+          <p class="section-subtitle">
+            Feedback from trainers, teammates, and collaborators reflecting my creativity, attention to detail, communication, and approach to design.
+          </p>
+        </div>
+
+        <!-- Honest & Polished Testimonial Placeholder Component -->
+        <div class="testimonial-frame fade-up">
+          <div class="testimonial-card testimonial-card--placeholder">
+            <div class="testimonial-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+
+            <div class="placeholder-content">
+              <span class="placeholder-badge">HONEST PORTFOLIO STANDARDS</span>
+              <p class="placeholder-quote">
+                &ldquo;Testimonials will be added as feedback becomes available.&rdquo;
+              </p>
+              <p class="placeholder-note">
+                I prioritize authenticity in every part of my presentation. Genuine testimonials from creative directors, trainers, and project collaborators will be published here upon completion of active and upcoming client engagements.
+              </p>
+            </div>
+
+            <div class="placeholder-action">
+              <a href="#contact" class="btn btn--outline btn--sm">
+                <span>Collaborate with Me</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         SECTION 8: SERVICES
+         ============================================== -->
+    <section class="section services-section" id="services" aria-label="Services and Creative Solutions">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Creative Offerings</span>
+          <h2 class="section-title">How I Can Help</h2>
+          <p class="section-subtitle">Comprehensive graphic design solutions tailored to bring clarity, visual identity, and aesthetic distinction to your brand.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1: Branding & Visual Identity -->
+          <article class="service-card fade-up">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+            </div>
+            <span class="service-number">01</span>
+            <h3 class="service-title">Branding &amp; Visual Identity</h3>
+            <p class="service-desc">
+              Creating cohesive visual identities that establish a clear and consistent brand presence.
+            </p>
+            <div class="service-meta">
+              <span class="service-tag">Color Systems</span>
+              <span class="service-tag">Typography Rules</span>
+              <span class="service-tag">Brand Guidelines</span>
+            </div>
+            <a href="#contact" class="service-link" data-service="Branding & Visual Identity">
+              <span>Discuss Project</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </article>
+
+          <!-- Service 2: Logo Design -->
+          <article class="service-card fade-up delay-1">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="m4.93 4.93 4.24 4.24"/>
+                <path d="m14.83 9.17 4.24-4.24"/>
+                <path d="m14.83 14.83 4.24 4.24"/>
+                <path d="m9.17 14.83-4.24 4.24"/>
+              </svg>
+            </div>
+            <span class="service-number">02</span>
+            <h3 class="service-title">Logo Design</h3>
+            <p class="service-desc">
+              Developing distinctive and meaningful logos based on the brand's concept and visual direction.
+            </p>
+            <div class="service-meta">
+              <span class="service-tag">Wordmarks</span>
+              <span class="service-tag">Emblems &amp; Icons</span>
+              <span class="service-tag">Vector Formats</span>
+            </div>
+            <a href="#contact" class="service-link" data-service="Logo Design">
+              <span>Discuss Project</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </article>
+
+          <!-- Service 3: Social Media Design -->
+          <article class="service-card fade-up delay-2">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </div>
+            <span class="service-number">03</span>
+            <h3 class="service-title">Social Media Design</h3>
+            <p class="service-desc">
+              Creating engaging and consistent visual content for social media platforms.
+            </p>
+            <div class="service-meta">
+              <span class="service-tag">Instagram Carousels</span>
+              <span class="service-tag">Story Templates</span>
+              <span class="service-tag">Feed Consistency</span>
+            </div>
+            <a href="#contact" class="service-link" data-service="Social Media Design">
+              <span>Discuss Project</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </article>
+
+          <!-- Service 4: Presentation Design -->
+          <article class="service-card fade-up delay-3">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <span class="service-number">04</span>
+            <h3 class="service-title">Presentation Design</h3>
+            <p class="service-desc">
+              Designing clear, organized, and visually engaging presentations.
+            </p>
+            <div class="service-meta">
+              <span class="service-tag">Pitch Decks</span>
+              <span class="service-tag">Portfolio Decks</span>
+              <span class="service-tag">Information Design</span>
+            </div>
+            <a href="#contact" class="service-link" data-service="Presentation Design">
+              <span>Discuss Project</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </article>
+
+          <!-- Service 5: Print Design -->
+          <article class="service-card service-card--wide fade-up delay-4">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                <rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </div>
+            <span class="service-number">05</span>
+            <h3 class="service-title">Print Design</h3>
+            <p class="service-desc">
+              Designing promotional and printed materials such as flyers, posters, brochures, business cards, and other brand applications.
+            </p>
+            <div class="service-meta">
+              <span class="service-tag">Flyers &amp; Posters</span>
+              <span class="service-tag">Brochures</span>
+              <span class="service-tag">Business Cards</span>
+              <span class="service-tag">Print-Ready CMYK</span>
+            </div>
+            <a href="#contact" class="service-link" data-service="Print Design">
+              <span>Discuss Project</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         SECTION 9: GET IN TOUCH
+         ============================================== -->
+    <section class="section contact-section" id="contact" aria-label="Get in Touch">
+      <div class="container">
+        <div class="contact-card-wrapper fade-up">
+          <div class="contact-grid">
+            
+            <!-- Contact Left: Information & Links -->
+            <div class="contact-info">
+              <div class="eyebrow-badge">
+                <span class="badge-dot"></span>
+                <span>START A CONVERSATION</span>
+              </div>
+              <h2 class="contact-heading">Have a Design Project in Mind?</h2>
+              
+              <div class="contact-supporting-texts">
+                <p class="contact-lead">Let's create something clear, creative, and visually impactful.</p>
+                <p class="contact-avail">
+                  I'm available for branding, visual identity, logo design, social media, presentation, and print design projects.
+                </p>
+              </div>
+
+              <!-- Contact Channels (Placeholders clearly marked) -->
+              <div class="contact-channels">
+                <div class="channel-item">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div class="channel-detail">
+                    <span class="channel-label">Direct Email</span>
+                    <a href="mailto:[Your Email]" class="channel-value" id="emailContactLink" title="Click to email">[Your Email]</a>
+                  </div>
+                </div>
+
+                <div class="channel-item">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  </div>
+                  <div class="channel-detail">
+                    <span class="channel-label">LinkedIn Profile</span>
+                    <a href="[Your LinkedIn]" target="_blank" rel="noopener noreferrer" class="channel-value" id="linkedinContactLink">[Your LinkedIn]</a>
+                  </div>
+                </div>
+
+                <div class="channel-item">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 8h-3v1h3V8zm0 2h-3v1h3v-1zm-9-5H3v14h7.5c2.5 0 4.5-1.5 4.5-4 0-1.8-1.2-3.3-2.8-3.7C13.2 8 14 7 14 5.5 14 3.5 12.5 2 10.5 2zM6 5.5h4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5H6v-3zm4.5 9.5H6v-3.5h4.5c1 0 1.8.8 1.8 1.8s-.8 1.7-1.8 1.7z"/></svg>
+                  </div>
+                  <div class="channel-detail">
+                    <span class="channel-label">Behance Portfolio</span>
+                    <a href="[Your Behance]" target="_blank" rel="noopener noreferrer" class="channel-value" id="behanceContactLink">[Your Behance]</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-notice">
+                <span>✦</span>
+                <p>Response time typically within 24–48 hours for freelance &amp; project inquiries.</p>
+              </div>
+            </div>
+
+            <!-- Contact Right: Form with Client-Side Validation -->
+            <div class="contact-form-side">
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-intro">
+                  <h3 class="form-title">Send a Message</h3>
+                  <p class="form-subtitle">Fill in the form below or write directly to the email above.</p>
+                </div>
+
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Your Name <span class="required-mark">*</span></label>
+                  <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+                  <span class="field-error-msg" id="nameError" aria-live="polite"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email Address <span class="required-mark">*</span></label>
+                  <input type="email" id="contactEmail" name="email" class="form-input" placeholder="e.g. sarah@company.com" required>
+                  <span class="field-error-msg" id="emailError" aria-live="polite"></span>
+                </div>
+
+                <!-- Service Selector -->
+                <div class="form-group">
+                  <label for="contactService" class="form-label">Project Type / Service <span class="required-mark">*</span></label>
+                  <select id="contactService" name="service" class="form-select" required>
+                    <option value="" disabled selected>Select a design service...</option>
+                    <option value="Branding & Visual Identity">Branding &amp; Visual Identity</option>
+                    <option value="Logo Design">Logo Design</option>
+                    <option value="Social Media Design">Social Media Design</option>
+                    <option value="Presentation Design">Presentation Design</option>
+                    <option value="Print Design">Print Design</option>
+                    <option value="General Graphic Design Inquiry">General Graphic Design Inquiry</option>
+                  </select>
+                  <span class="field-error-msg" id="serviceError" aria-live="polite"></span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <label for="contactMessage" class="form-label">Project Details &amp; Message <span class="required-mark">*</span></label>
+                  <textarea id="contactMessage" name="message" class="form-textarea" rows="4" placeholder="Briefly describe your brand goals, scope, and timeline..." required></textarea>
+                  <span class="field-error-msg" id="messageError" aria-live="polite"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                  <span>Send Message</span>
+                  <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"/>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  </svg>
+                </button>
+
+                <!-- Feedback Banner -->
+                <div class="form-feedback" id="formFeedback" role="alert" aria-live="assertive" hidden>
+                  <div class="feedback-icon" aria-hidden="true">✓</div>
+                  <div class="feedback-text">
+                    <strong>Thank you for your message!</strong>
+                    <p>Your inquiry has been received. Because this is a static client-side portfolio demonstration, you can also launch your local email client directly:</p>
+                    <a href="mailto:[Your Email]" class="btn btn--outline btn--sm feedback-email-btn" id="feedbackMailBtn">Open in Email Client</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==============================================
+       FOOTER
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo footer-logo">
+            <span class="logo-text">Rana Elhasany</span>
+          </a>
+          <p class="footer-tagline">Graphic Designer | Branding &amp; Visual Communication</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear"></span> Rana Elhasany. All rights reserved.
+        </p>
+        <p class="footer-editorial">
+          Designed with purpose, clarity &amp; visual confidence.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Back-to-Top Floating Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top of page" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+
+  <!-- ==============================================
+       PROJECT DETAILS MODAL / LIGHTBOX
+       ============================================== -->
+  <div class="project-modal" id="projectModal" aria-modal="true" role="dialog" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">&times;</button>
+      
+      <div class="modal-content" id="modalDynamicContent">
+        <!-- Injected via JavaScript based on selected project -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
